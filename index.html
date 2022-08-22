@@ -37,7 +37,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Lionel Messi</h5>
                   <p class="card-text">36 goals . 126 assist</p>
-                  <button type="button" id="btn-messi" class="btn btn-primary btn-lg">Submit</button>
+                  <button type="button" class="btn btn-primary btn-lg" onclick="addToTable(this)">Submit</button>
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Neymar Jr</h5>
                   <p class="card-text">34 goals . 120 assist</p>
-                  <button type="button" id="btn-neymar" class="btn btn-primary btn-lg">Submit</button>
+                  <button type="button" class="btn btn-primary btn-lg" onclick="addToTable(this)">Submit</button>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Kylian Mbappé</h5>
                   <p class="card-text">32 goals . 110 assist</p>
-                  <button id="btn-mbappe" type="button" class="btn btn-primary btn-lg">Submit</button>
+                  <button type="button" class="btn btn-primary btn-lg" onclick="addToTable(this)">Submit</button>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Vitor Machado</h5>
                   <p class="card-text">25 goals . 90 assist</p>
-                  <button id="btn-vitor" type="button" class="btn btn-primary btn-lg">Submit</button>
+                  <button id="btn-vitor" type="button" class="btn btn-primary btn-lg" onclick="addToTable(this)">Submit</button>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Sergio Ramos</h5>
                   <p class="card-text">28 goals . 95 assist</p>
-                  <button id="btn-ramos" type="button" class="btn btn-primary btn-lg">Submit</button>
+                  <button id="btn-ramos" type="button" class="btn btn-primary btn-lg" onclick="addToTable(this)">Submit</button>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Renato Sanches</h5>
                   <p class="card-text">23 goals . 91 assist</p>
-                  <button id="btn-renato" type="button" class="btn btn-primary btn-lg">Submit</button>
+                  <button id="btn-renato" type="button" class="btn btn-primary btn-lg" onclick="addToTable(this)">Submit</button>
                 </div>
               </div>
             </div>
@@ -103,14 +103,20 @@
 <section class="container w-25 mt-5">
   <!-- first part -->
   <div class="ms-5">
-    <h1>Selected-V</h1>
-  
-     <li id="li-first">1.Lionel Messi</li>
-     <li id="li-second">2.Neymar Jr</li>
-     <li id="li-third">3.Kylian Mbappé</li>
-     <li id="li-forth">4.Vitor Machado</li>
-     <li id="li-fifth">5.Sergio Ramos</li>
-     
+    <h1>Selected-V-<span id="Total-player">0</span></h1>
+      
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+        </tr>
+      </thead>
+      <tbody id="player-list">
+       
+        
+      </tbody>
+    </table>
    
   </div>
   <!-- second part -->
